@@ -4,19 +4,25 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex; /* Use Flexbox on body */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; 
+  
   background-color: yellow;
+  font-size: 16px;
 }
 
 .card {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;   
   background-color: white;
-  border: 5px solid black;
-  margin-top: 3rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px;
+  
+  width: 25rem;
+
 }
 .content {
   padding: 1rem;
@@ -27,7 +33,7 @@ h1 {
 }
 
 .content .main-img {
-  width: 40rem;
+  width: 23rem;
   border-radius: 2rem;
 }
 
@@ -38,14 +44,26 @@ h6 {
   font-size: 18px;
   background-color: yellow;
 }
-.gerg-img{
-    margin-top: 1rem;
+.gerg-img {
+  margin-top: 1rem;
+  vertical-align: middle;
+  width: 4rem;
+}
+span {
+  font-weight: bold;
 }
 .attribution {
   font-size: 11px;
   text-align: center;
+  text-align: center;
+  position: absolute; 
+  bottom: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
+h1:hover {
+  color: yellow;
+  cursor: pointer;
+}
